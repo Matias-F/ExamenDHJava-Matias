@@ -80,6 +80,32 @@ public class Curso {
 		return true;
 	}
 	
-
+	
+	public Boolean agregarAlumno(Alumno alumno) {
+		
+		this.inscriptos.add(alumno);
+		
+		if(inscriptos.size() <= maxAlumnos) {
+			
+			return true;
+			
+		} else {
+			
+			return false;
+		}
+		
+	}
+	
+	public void eliminarAlumno(Alumno alumno) {
+		
+		this.inscriptos.remove(alumno);
+		
+	}
 	
 }
+
+
+
+
+
+
