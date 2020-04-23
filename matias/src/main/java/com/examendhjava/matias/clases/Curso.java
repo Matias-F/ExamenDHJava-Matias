@@ -1,9 +1,15 @@
 package com.examendhjava.matias.clases;
 
+import java.util.ArrayList;
+
 public class Curso {
 
 	private String nombre;
 	private Integer codigoCurso;
+	private Profesor profesorTitular;
+	private Profesor profesorAdjunto;
+	private ArrayList<Alumno> inscriptos; 
+	private Integer maxAlumnos;
 	
 	
 	
@@ -14,6 +20,40 @@ public class Curso {
 		this.nombre = nombre;
 	}
 	
+	public Integer getCodigoCurso() {
+		return codigoCurso;
+	}
+	public void setCodigoCurso(Integer codigoCurso) {
+		this.codigoCurso = codigoCurso;
+	}
+	
+	public Profesor getProfesorTitular() {
+		return profesorTitular;
+	}
+	public void setProfesorTitular(Profesor profesorTitular) {
+		this.profesorTitular = profesorTitular;
+	}
+	
+	public Profesor getProfesorAdjunto() {
+		return profesorAdjunto;
+	}
+	public void setProfesorAdjunto(Profesor profesorAdjunto) {
+		this.profesorAdjunto = profesorAdjunto;
+	}
+	
+	public ArrayList<Alumno> getInscriptos() {
+		return inscriptos;
+	}
+	public void setInscriptos(ArrayList<Alumno> inscriptos) {
+		this.inscriptos = inscriptos;
+	}
+	
+	public Integer getMaxAlumnos() {
+		return maxAlumnos;
+	}
+	public void setMaxAlumnos(Integer maxAlumnos) {
+		this.maxAlumnos = maxAlumnos;
+	}
 	
 	
 	@Override
@@ -39,12 +79,7 @@ public class Curso {
 			return false;
 		return true;
 	}
-	public Integer getCodigoCurso() {
-		return codigoCurso;
-	}
-	public void setCodigoCurso(Integer codigoCurso) {
-		this.codigoCurso = codigoCurso;
-	}
 	
+
 	
 }

@@ -1,6 +1,6 @@
 package com.examendhjava.matias.clases;
 
-public class Profesor {
+public abstract class Profesor {
 
 	private String nombre;
 	private String apellido;
